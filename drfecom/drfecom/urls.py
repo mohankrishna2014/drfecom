@@ -22,6 +22,8 @@ from drf_spectacular.views import SpectacularAPIView,SpectacularSwaggerView
 
 router=DefaultRouter()
 router.register(r'Category',views.CategoryViewSet)
+router.register(r'Brand',views.BrandViewSet)
+router.register(r'Product',views.ProductViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
